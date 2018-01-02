@@ -1,4 +1,4 @@
-#+TITLE: software project notes
+#+TITLE: software project
 #+DATE: 2017-12-12
 #+SETUPFILE: ~/blog/setupfile.org
 #+JEKYLL_LAYOUT: post
