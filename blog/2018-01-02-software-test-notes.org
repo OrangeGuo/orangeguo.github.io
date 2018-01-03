@@ -101,4 +101,54 @@
 #+BEGIN_EXPORT html
 <img src="/images/softtest04.png" alt="Drawing" width="400px" />
 #+END_EXPORT
-
+** 单元测试
+*** 目的
+- 检查代码是否符合设计和规范，保证局部代码的质量
+- 尽早发现错误，快速编程反馈
+*** 主要内容
+*主要关注内部处理逻辑和数据结构*
+- 模块接口测试
+- 局部数据结构测试
+- 独立路径测试
+- 错误处理测试
+- 边界测试
+*** 过程
+1. 实例化别测试对象
+2. 提供测试数据
+3. 调用被测试的方法
+4. 验证测试结果
+*** 单元测试的工具 junit
+#+BEGIN_EXPORT html
+<img src="/images/softtest05.png" alt="Drawing" width="400px" />
+#+END_EXPORT
+** 集成测试
+#+BEGIN_EXPORT html
+<img src="/images/softtest06.png" alt="Drawing" width="400px" />
+#+END_EXPORT
+*** 集成策略
+**** 非渐增式测试策略
+分别测试每个模块，然后组装所有模块成需要的程序
+适用于规模较小的系统且难以定位错误
+**** 渐增式测试策略
+每次把下一个要测试的模块同已测试好的模块组合起来进行测试
+容易定位错误，但测试周期长
+***** 测试方法
+- 自顶向下
+- 自底向上
+- 混合式集成
+#+BEGIN_EXPORT html
+<img src="/images/softtest07.png" alt="Drawing" width="400px" />
+#+END_EXPORT 
+** 系统测试
+#+BEGIN_EXPORT html
+<img src="/images/softtest08.png" alt="Drawing" width="400px" />
+#+END_EXPORT
+*** 功能性测试
+- 功能符合性的测试
+- 标准的测试
+*** 非功能性测试
+- 兼容性测试
+- 可用性测试
+- 安全性测试
+- 可靠性测试
+- 国际化测试
