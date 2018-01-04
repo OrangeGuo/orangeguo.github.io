@@ -1,4 +1,4 @@
-#+TITLE: software project
+#+TITLE: 软件工程复习笔记
 #+DATE: 2017-12-12
 #+SETUPFILE: ~/blog/setupfile.org
 #+JEKYLL_LAYOUT: post
@@ -211,9 +211,3 @@
 使用人工或自动手段运行软件系统的过程,目的在于检验系统是否满足规定的需求,或确定预期结果与实际结果之间的差异
 ** 目的 
 检验软件是否满足需求(包含功能需求和非功能需求)
-
-#+BEGIN_SRC emacs-lisp :results raw :exports results
-  (setq org-export-with-toc nil)
-  (setq org-export-with-section-numbers nil)
-#+END_SRC
-
