@@ -75,12 +75,12 @@
 
 
 
-<meta name="description" content="Table of Contents   1. 目录  1.1. 绪言  1.1.1. 软件质量问题的原因 1.1.2. 软件质量属性 1.1.3. 从三个方面考察软件质量 1.1.4. 软件测试流程   1.2. 软件测试基础  1.2.1. 基本术语 1.2.2. 缺陷分类 1.2.3. 测试用例 1.2.4. 测试目的 1.2.5. 测试的阶段 1.2.6. 软件测试技术   1.3. 黑盒">
+<meta name="description" content="1 目录    1.1 绪言    1.1.1 软件质量问题的原因   需求不清 缺乏有效的项目管理 缺乏有效的开发方法 不遵守开发标准和规范 软件开发工具引起     1.1.2 软件质量属性    产品修改   可理解性；可维护性；可测试性；灵活性    产品转移   可移植性；可重用性；互运行性    产品运行   正确性；效率；健壮性；风险；完整性；可用性       1.1.3 从">
 <meta property="og:type" content="article">
 <meta property="og:title" content="software test notes">
 <meta property="og:url" content="https://orangeguo.github.io/blog/2018-01-02-2018-01-02-software-test-notes.html">
 <meta property="og:site_name" content="Review Notes">
-<meta property="og:description" content="Table of Contents   1. 目录  1.1. 绪言  1.1.1. 软件质量问题的原因 1.1.2. 软件质量属性 1.1.3. 从三个方面考察软件质量 1.1.4. 软件测试流程   1.2. 软件测试基础  1.2.1. 基本术语 1.2.2. 缺陷分类 1.2.3. 测试用例 1.2.4. 测试目的 1.2.5. 测试的阶段 1.2.6. 软件测试技术   1.3. 黑盒">
+<meta property="og:description" content="1 目录    1.1 绪言    1.1.1 软件质量问题的原因   需求不清 缺乏有效的项目管理 缺乏有效的开发方法 不遵守开发标准和规范 软件开发工具引起     1.1.2 软件质量属性    产品修改   可理解性；可维护性；可测试性；灵活性    产品转移   可移植性；可重用性；互运行性    产品运行   正确性；效率；健壮性；风险；完整性；可用性       1.1.3 从">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://orangeguo.github.io/images/softtest01.png">
 <meta property="og:image" content="https://orangeguo.github.io/images/softtest02.png">
@@ -90,10 +90,10 @@
 <meta property="og:image" content="https://orangeguo.github.io/images/softtest06.png">
 <meta property="og:image" content="https://orangeguo.github.io/images/softtest07.png">
 <meta property="og:image" content="https://orangeguo.github.io/images/softtest08.png">
-<meta property="og:updated_time" content="2018-01-03T11:20:08.505Z">
+<meta property="og:updated_time" content="2018-01-04T07:38:17.694Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="software test notes">
-<meta name="twitter:description" content="Table of Contents   1. 目录  1.1. 绪言  1.1.1. 软件质量问题的原因 1.1.2. 软件质量属性 1.1.3. 从三个方面考察软件质量 1.1.4. 软件测试流程   1.2. 软件测试基础  1.2.1. 基本术语 1.2.2. 缺陷分类 1.2.3. 测试用例 1.2.4. 测试目的 1.2.5. 测试的阶段 1.2.6. 软件测试技术   1.3. 黑盒">
+<meta name="twitter:description" content="1 目录    1.1 绪言    1.1.1 软件质量问题的原因   需求不清 缺乏有效的项目管理 缺乏有效的开发方法 不遵守开发标准和规范 软件开发工具引起     1.1.2 软件质量属性    产品修改   可理解性；可维护性；可测试性；灵活性    产品转移   可移植性；可重用性；互运行性    产品运行   正确性；效率；健壮性；风险；完整性；可用性       1.1.3 从">
 <meta name="twitter:image" content="https://orangeguo.github.io/images/softtest01.png">
 
 
@@ -304,121 +304,7 @@
       
 
       
-        <div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#org5ef10fa">1. 软件工程基本概念</a>
-<ul>
-<li><a href="#orgb6112c7">1.1. 软件工程的定义</a></li>
-<li><a href="#orgd8a17a3">1.2. 软件工程的过程</a></li>
-<li><a href="#orgfd6697c">1.3. 软件危机</a>
-<ul>
-<li><a href="#org94850ed">1.3.1. 表现</a></li>
-<li><a href="#org0ff9051">1.3.2. 原因</a></li>
-<li><a href="#orgd1d7f5e">1.3.3. 方法</a></li>
-</ul>
-</li>
-<li><a href="#org743e245">1.4. 软件质量要素</a>
-<ul>
-<li><a href="#org69f8989">1.4.1. 正确性</a></li>
-<li><a href="#orgfe7db6b">1.4.2. 可用性</a></li>
-<li><a href="#org23402ab">1.4.3. <b>可靠性</b></a></li>
-<li><a href="#org277754b">1.4.4. 有效性</a></li>
-<li><a href="#orgdb06aa6">1.4.5. 可维护性</a></li>
-<li><a href="#org44eb5e2">1.4.6. 可移植性</a></li>
-<li><a href="#org1db3708">1.4.7. 安全性</a></li>
-<li><a href="#orgcba427f">1.4.8. 可复用性</a></li>
-</ul>
-</li>
-<li><a href="#org150cce5">1.5. 软件工程的目标和基本原则</a>
-<ul>
-<li><a href="#orgc8a3592">1.5.1. 目标</a></li>
-<li><a href="#org26d071a">1.5.2. 抽象</a></li>
-<li><a href="#orge8d5a94">1.5.3. 信息隐藏</a></li>
-<li><a href="#org506cb1d">1.5.4. 局部化</a></li>
-<li><a href="#org8e0ebc2">1.5.5. 一致性,完全性,可验证性</a></li>
-</ul>
-</li>
-<li><a href="#org886afbe">1.6. 软件开发主要方法</a>
-<ul>
-<li><a href="#org972c012">1.6.1. 结构化方法</a></li>
-<li><a href="#org5d5ef9e">1.6.2. 面向对象方法</a></li>
-</ul>
-</li>
-<li><a href="#org359a933">1.7. 软件过程模型</a>
-<ul>
-<li><a href="#org3691d06">1.7.1. 瀑布模型</a></li>
-<li><a href="#orgefd62de">1.7.2. 原型模型</a></li>
-<li><a href="#org33174df">1.7.3. 螺旋模型</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#orge03f526">2. 软件需求</a>
-<ul>
-<li><a href="#org37e8717">2.1. 软件需求的分类</a></li>
-<li><a href="#org70b7b71">2.2. 软件需求的质量要素</a></li>
-<li><a href="#org371e88f">2.3. 需求调查的基本方法</a></li>
-<li><a href="#org1ec4563">2.4. 需求建模的基本方法</a></li>
-<li><a href="#org28ffc41">2.5. 需求工程中的活动</a></li>
-</ul>
-</li>
-<li><a href="#org8ca5f57">3. UML</a>
-<ul>
-<li><a href="#orgae5cbb6">3.1. 用例图</a></li>
-<li><a href="#org36b3bc3">3.2. 类图</a></li>
-<li><a href="#orge9308b4">3.3. 活动图</a></li>
-<li><a href="#org07785cb">3.4. 状态图</a></li>
-</ul>
-</li>
-<li><a href="#orgda67d0c">4. 软件设计的基本原则</a>
-<ul>
-<li><a href="#org628bd16">4.1. 抽象与逐步求精</a></li>
-<li><a href="#orgb6b9f75">4.2. 模块化</a></li>
-<li><a href="#org5e6d8b5">4.3. 信息隐藏</a></li>
-<li><a href="#orgafc345b">4.4. 关注点分离</a></li>
-<li><a href="#orgb596b54">4.5. 软件设计活动</a></li>
-</ul>
-</li>
-<li><a href="#orgb06f645">5. 软件体系结构</a>
-<ul>
-<li><a href="#orgd692817">5.1. 定义</a></li>
-<li><a href="#org3001435">5.2. 视图</a>
-<ul>
-<li><a href="#orgd28c21a">5.2.1. 逻辑视图</a></li>
-<li><a href="#org5819dfd">5.2.2. 开发视图</a></li>
-<li><a href="#org7a84786">5.2.3. 物理视图</a></li>
-<li><a href="#orgcf2060e">5.2.4. 运行视图</a></li>
-<li><a href="#org9250d97">5.2.5. 数据视图</a></li>
-</ul>
-</li>
-<li><a href="#org20bd155">5.3. 通用的体系结构模式</a>
-<ul>
-<li><a href="#org7e42455">5.3.1. 分层模式</a></li>
-<li><a href="#org858d89f">5.3.2. 管道与过滤器模式</a></li>
-<li><a href="#org9f47b39">5.3.3. 黑板模式</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#org4bb723a">6. 结构化软件开发</a></li>
-<li><a href="#org94ae373">7. 软件维护</a>
-<ul>
-<li><a href="#org86ef086">7.1. 分类</a></li>
-<li><a href="#org0d3c035">7.2. 软件的可维护性</a></li>
-</ul>
-</li>
-<li><a href="#org181deca">8. 软件测试</a>
-<ul>
-<li><a href="#org65a5759">8.1. 定义</a></li>
-<li><a href="#orgbdf3ac4">8.2. 目的</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-
+        
 
 <div id="outline-container-org5ef10fa" class="outline-2">
 <h2 id="org5ef10fa"><span class="section-number-2">1</span> 软件工程基本概念</h2>
@@ -1179,7 +1065,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">Table of Contents</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#org5ef10fa"><span class="nav-text">1 软件工程基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#orgb6112c7"><span class="nav-text">1.1 软件工程的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orgd8a17a3"><span class="nav-text">1.2 软件工程的过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orgfd6697c"><span class="nav-text">1.3 软件危机</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#org94850ed"><span class="nav-text">1.3.1 表现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org0ff9051"><span class="nav-text">1.3.2 原因</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#orgd1d7f5e"><span class="nav-text">1.3.3 方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org743e245"><span class="nav-text">1.4 软件质量要素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#org69f8989"><span class="nav-text">1.4.1 正确性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#orgfe7db6b"><span class="nav-text">1.4.2 可用性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org23402ab"><span class="nav-text">1.4.3 可靠性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org277754b"><span class="nav-text">1.4.4 有效性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#orgdb06aa6"><span class="nav-text">1.4.5 可维护性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org44eb5e2"><span class="nav-text">1.4.6 可移植性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org1db3708"><span class="nav-text">1.4.7 安全性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#orgcba427f"><span class="nav-text">1.4.8 可复用性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org150cce5"><span class="nav-text">1.5 软件工程的目标和基本原则</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#orgc8a3592"><span class="nav-text">1.5.1 目标</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org26d071a"><span class="nav-text">1.5.2 抽象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#orge8d5a94"><span class="nav-text">1.5.3 信息隐藏</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org506cb1d"><span class="nav-text">1.5.4 局部化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org8e0ebc2"><span class="nav-text">1.5.5 一致性,完全性,可验证性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org886afbe"><span class="nav-text">1.6 软件开发主要方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#org972c012"><span class="nav-text">1.6.1 结构化方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org5d5ef9e"><span class="nav-text">1.6.2 面向对象方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org359a933"><span class="nav-text">1.7 软件过程模型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#org3691d06"><span class="nav-text">1.7.1 瀑布模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#orgefd62de"><span class="nav-text">1.7.2 原型模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org33174df"><span class="nav-text">1.7.3 螺旋模型</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#orge03f526"><span class="nav-text">2 软件需求</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org37e8717"><span class="nav-text">2.1 软件需求的分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org70b7b71"><span class="nav-text">2.2 软件需求的质量要素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org371e88f"><span class="nav-text">2.3 需求调查的基本方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org1ec4563"><span class="nav-text">2.4 需求建模的基本方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org28ffc41"><span class="nav-text">2.5 需求工程中的活动</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#org8ca5f57"><span class="nav-text">3 UML</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#orgae5cbb6"><span class="nav-text">3.1 用例图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org36b3bc3"><span class="nav-text">3.2 类图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orge9308b4"><span class="nav-text">3.3 活动图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org07785cb"><span class="nav-text">3.4 状态图</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#orgda67d0c"><span class="nav-text">4 软件设计的基本原则</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org628bd16"><span class="nav-text">4.1 抽象与逐步求精</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orgb6b9f75"><span class="nav-text">4.2 模块化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org5e6d8b5"><span class="nav-text">4.3 信息隐藏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orgafc345b"><span class="nav-text">4.4 关注点分离</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orgb596b54"><span class="nav-text">4.5 软件设计活动</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#orgb06f645"><span class="nav-text">5 软件体系结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#orgd692817"><span class="nav-text">5.1 定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org3001435"><span class="nav-text">5.2 视图</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#orgd28c21a"><span class="nav-text">5.2.1 逻辑视图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org5819dfd"><span class="nav-text">5.2.2 开发视图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org7a84786"><span class="nav-text">5.2.3 物理视图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#orgcf2060e"><span class="nav-text">5.2.4 运行视图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org9250d97"><span class="nav-text">5.2.5 数据视图</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org20bd155"><span class="nav-text">5.3 通用的体系结构模式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#org7e42455"><span class="nav-text">5.3.1 分层模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org858d89f"><span class="nav-text">5.3.2 管道与过滤器模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org9f47b39"><span class="nav-text">5.3.3 黑板模式</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#org4bb723a"><span class="nav-text">6 结构化软件开发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#org94ae373"><span class="nav-text">7 软件维护</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org86ef086"><span class="nav-text">7.1 分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org0d3c035"><span class="nav-text">7.2 软件的可维护性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#org181deca"><span class="nav-text">8 软件测试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org65a5759"><span class="nav-text">8.1 定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orgbdf3ac4"><span class="nav-text">8.2 目的</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#org5ef10fa"><span class="nav-text">1 软件工程基本概念</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#orgb6112c7"><span class="nav-text">1.1 软件工程的定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orgd8a17a3"><span class="nav-text">1.2 软件工程的过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orgfd6697c"><span class="nav-text">1.3 软件危机</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#org94850ed"><span class="nav-text">1.3.1 表现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org0ff9051"><span class="nav-text">1.3.2 原因</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#orgd1d7f5e"><span class="nav-text">1.3.3 方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org743e245"><span class="nav-text">1.4 软件质量要素</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#org69f8989"><span class="nav-text">1.4.1 正确性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#orgfe7db6b"><span class="nav-text">1.4.2 可用性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org23402ab"><span class="nav-text">1.4.3 可靠性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org277754b"><span class="nav-text">1.4.4 有效性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#orgdb06aa6"><span class="nav-text">1.4.5 可维护性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org44eb5e2"><span class="nav-text">1.4.6 可移植性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org1db3708"><span class="nav-text">1.4.7 安全性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#orgcba427f"><span class="nav-text">1.4.8 可复用性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org150cce5"><span class="nav-text">1.5 软件工程的目标和基本原则</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#orgc8a3592"><span class="nav-text">1.5.1 目标</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org26d071a"><span class="nav-text">1.5.2 抽象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#orge8d5a94"><span class="nav-text">1.5.3 信息隐藏</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org506cb1d"><span class="nav-text">1.5.4 局部化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org8e0ebc2"><span class="nav-text">1.5.5 一致性,完全性,可验证性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org886afbe"><span class="nav-text">1.6 软件开发主要方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#org972c012"><span class="nav-text">1.6.1 结构化方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org5d5ef9e"><span class="nav-text">1.6.2 面向对象方法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org359a933"><span class="nav-text">1.7 软件过程模型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#org3691d06"><span class="nav-text">1.7.1 瀑布模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#orgefd62de"><span class="nav-text">1.7.2 原型模型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org33174df"><span class="nav-text">1.7.3 螺旋模型</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#orge03f526"><span class="nav-text">2 软件需求</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org37e8717"><span class="nav-text">2.1 软件需求的分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org70b7b71"><span class="nav-text">2.2 软件需求的质量要素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org371e88f"><span class="nav-text">2.3 需求调查的基本方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org1ec4563"><span class="nav-text">2.4 需求建模的基本方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org28ffc41"><span class="nav-text">2.5 需求工程中的活动</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#org8ca5f57"><span class="nav-text">3 UML</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#orgae5cbb6"><span class="nav-text">3.1 用例图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org36b3bc3"><span class="nav-text">3.2 类图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orge9308b4"><span class="nav-text">3.3 活动图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org07785cb"><span class="nav-text">3.4 状态图</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#orgda67d0c"><span class="nav-text">4 软件设计的基本原则</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org628bd16"><span class="nav-text">4.1 抽象与逐步求精</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orgb6b9f75"><span class="nav-text">4.2 模块化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org5e6d8b5"><span class="nav-text">4.3 信息隐藏</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orgafc345b"><span class="nav-text">4.4 关注点分离</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orgb596b54"><span class="nav-text">4.5 软件设计活动</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#orgb06f645"><span class="nav-text">5 软件体系结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#orgd692817"><span class="nav-text">5.1 定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org3001435"><span class="nav-text">5.2 视图</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#orgd28c21a"><span class="nav-text">5.2.1 逻辑视图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org5819dfd"><span class="nav-text">5.2.2 开发视图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org7a84786"><span class="nav-text">5.2.3 物理视图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#orgcf2060e"><span class="nav-text">5.2.4 运行视图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org9250d97"><span class="nav-text">5.2.5 数据视图</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org20bd155"><span class="nav-text">5.3 通用的体系结构模式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#org7e42455"><span class="nav-text">5.3.1 分层模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org858d89f"><span class="nav-text">5.3.2 管道与过滤器模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org9f47b39"><span class="nav-text">5.3.3 黑板模式</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#org4bb723a"><span class="nav-text">6 结构化软件开发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#org94ae373"><span class="nav-text">7 软件维护</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org86ef086"><span class="nav-text">7.1 分类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org0d3c035"><span class="nav-text">7.2 软件的可维护性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#org181deca"><span class="nav-text">8 软件测试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org65a5759"><span class="nav-text">8.1 定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orgbdf3ac4"><span class="nav-text">8.2 目的</span></a></li></ol></li></ol></div>
             
 
           </div>
