@@ -7,7 +7,6 @@
 #+JEKYLL_PUBLISHED: true
 
 
-* 目录
 ** 绪言 
 *** 软件质量问题的原因 
 - 需求不清
