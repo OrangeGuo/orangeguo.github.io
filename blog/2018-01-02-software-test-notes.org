@@ -2,11 +2,15 @@
 #+DATE: 2018-01-02
 #+SETUPFILE: ~/blog/setupfile.org
 #+JEKYLL_LAYOUT: post
-#+JEKYLL_CATEGORIES: 
-#+JEKYLL_TAGS: 
+#+JEKYLL_CATEGORIES: review 
+#+JEKYLL_TAGS: exam
 #+JEKYLL_PUBLISHED: true
 
 
+#+BEGIN_SRC emacs-lisp :results raw :exports results
+  (setq org-export-with-toc nil)
+  (setq org-export-with-section-numbers nil)
+#+END_SRC
 ** 绪言 
 *** 软件质量问题的原因 
 - 需求不清
@@ -153,7 +157,3 @@
 - 国际化测试
  
 
-#+BEGIN_SRC emacs-lisp :results raw :exports results
-  (setq org-export-with-toc nil)
-  (setq org-export-with-section-numbers nil)
-#+END_SRC
