@@ -151,3 +151,9 @@
 - 安全性测试
 - 可靠性测试
 - 国际化测试
+ 
+
+#+BEGIN_SRC emacs-lisp :results raw :exports results
+  (setq org-export-with-toc nil)
+  (setq org-export-with-section-numbers nil)
+#+END_SRC

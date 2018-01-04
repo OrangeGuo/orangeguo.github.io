@@ -212,3 +212,10 @@
 ** 目的 
 检验软件是否满足需求(包含功能需求和非功能需求)
 
+
+
+#+BEGIN_SRC emacs-lisp :results raw :exports results
+  (setq org-export-with-toc nil)
+  (setq org-export-with-section-numbers nil)
+#+END_SRC
+
