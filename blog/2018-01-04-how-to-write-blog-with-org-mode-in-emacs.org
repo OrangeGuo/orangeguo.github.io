@@ -25,3 +25,11 @@ emmm,just wait for a while.The installation will be finished soon.
   (setq org-octopress-directory-org-posts "~/blog/source/blog")
   (setq org-octopress-setup-file          "~/blog/setupfile.org")
 #+END_SRC
+then you should add codes above to your config file such as .emacs or init.el.as the directory is showed,"blog" is my folder containing 
+the blogs,so just replace it with yours.
+** tips
+how to remove the bothering "table of contents" and line numbers?
+#+BEGIN_SRC lisp
+  (setq org-export-with-toc nil)
+  (setq org-export-with-section-numbers nil)
+#+END_SRC
