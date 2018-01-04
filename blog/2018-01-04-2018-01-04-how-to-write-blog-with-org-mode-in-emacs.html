@@ -123,7 +123,7 @@
 
 
 
-  <title>分类 | orange</title>
+  <title>how to write blog with org-mode in emacs ? | orange</title>
   
 
 
@@ -238,40 +238,176 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://orangeguo.github.io/blog/2018-01-04-2018-01-04-how-to-write-blog-with-org-mode-in-emacs.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="OrangeGuo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="orange">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline"></h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 1 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/review/">review</a><span class="category-list-count">2</span></li></ul>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">how to write blog with org-mode in emacs ?</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-04T00:00:00+08:00">2018-01-04</time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        
+
+<div id="outline-container-org627d752" class="outline-2">
+<h2 id="org627d752">preparations</h2>
+<div class="outline-text-2" id="text-org627d752">
+</div>
+<div id="outline-container-org5ea79ab" class="outline-3">
+<h3 id="org5ea79ab">install and config "org-octopress"</h3>
+<div class="outline-text-3" id="text-org5ea79ab">
+<p>
+<i>org-octopress</i> is a necessary and useful package,which helps us write blogs in emacs with org-mode.It is very easy to install this 
+package in your emacs: 
+</p>
+<ol class="org-ol">
+<li>M-x</li>
+<li>package-install</li>
+<li>Enter</li>
+<li>org-octopress</li>
+<li>Enter</li>
+</ol>
+<p>
+emmm,just wait for a while.The installation will be finished soon.
+</p>
+<div class="org-src-container">
+<pre class="src src-lisp"><span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">require</span> '<span style="color: #a45bad; font-weight: bold;">org-octopress</span><span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7;">(</span>setq org-octopress-directory-top       <span style="color: #2d9574;">"~/blog/source"</span><span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7;">(</span>setq org-octopress-directory-posts     <span style="color: #2d9574;">"~/blog/source/_posts"</span><span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7;">(</span>setq org-octopress-directory-org-top   <span style="color: #2d9574;">"~/blog/source"</span><span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7;">(</span>setq org-octopress-directory-org-posts <span style="color: #2d9574;">"~/blog/source/blog"</span><span style="color: #4f97d7;">)</span>
+<span style="color: #4f97d7;">(</span>setq org-octopress-setup-file          <span style="color: #2d9574;">"~/blog/setupfile.org"</span><span style="color: #4f97d7;">)</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/tutorial/" rel="tag"># tutorial</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/2018-01-02-2018-01-02-software-test-notes.html" rel="next" title="软件测试复习笔记">
+                <i class="fa fa-chevron-left"></i> 软件测试复习笔记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -304,8 +440,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -365,6 +510,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#org627d752"><span class="nav-text">preparations</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org5ea79ab"><span class="nav-text">install and config &quot;org-octopress&quot;</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
