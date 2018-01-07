@@ -78,11 +78,11 @@
 <meta name="description" content="the guy was hungry layz">
 <meta property="og:type" content="website">
 <meta property="og:title" content="orange">
-<meta property="og:url" content="https://orangeguo.github.io/tags/index.html">
+<meta property="og:url" content="https://orangeguo.github.io/categories/index.html">
 <meta property="og:site_name" content="orange">
 <meta property="og:description" content="the guy was hungry layz">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-04T10:41:22.598Z">
+<meta property="og:updated_time" content="2018-01-04T10:42:29.083Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="orange">
 <meta name="twitter:description" content="the guy was hungry layz">
@@ -117,7 +117,7 @@
 
 
 
-  <link rel="canonical" href="https://orangeguo.github.io/tags/"/>
+  <link rel="canonical" href="https://orangeguo.github.io/categories/"/>
 
 
 
@@ -288,6 +288,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/review/" itemprop="url" rel="index">
+                    <span itemprop="name">review</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -320,13 +342,14 @@
 <div id="outline-container-org27eed73" class="outline-2">
 <h2 id="org27eed73">编译概述</h2>
 <div class="outline-text-2" id="text-org27eed73">
+<hr>
 </div>
 <div id="outline-container-org34a8979" class="outline-3">
 <h3 id="org34a8979">语言处理程序</h3>
 <div class="outline-text-3" id="text-org34a8979">
-<p>
-<b>定义</b> 使计算机能理解人们提供的命令与输入的程序
-</p>
+<ul class="org-ul">
+<li><b>定义</b> 使计算机能理解人们提供的命令与输入的程序</li>
+</ul>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -358,10 +381,10 @@
 </tr>
 </tbody>
 </table>
-<p>
-<b>编译系统</b> 编译程序与运行系统的合称
-<b>交叉编译</b> 编译过程与编译输出的目标程序的执行在不同机器上完成时，这种编译称之
-</p>
+<ul class="org-ul">
+<li><b>编译系统</b> 编译程序与运行系统的合称</li>
+<li><b>交叉编译</b> 编译过程与编译输出的目标程序的执行在不同机器上完成时，这种编译称之</li>
+</ul>
 </div>
 </div>
 <div id="outline-container-orga128464" class="outline-3">
@@ -405,9 +428,11 @@
 <div id="outline-container-org5d4b05f" class="outline-3">
 <h3 id="org5d4b05f">目标代码生成</h3>
 <div class="outline-text-3" id="text-org5d4b05f">
+<ul class="org-ul">
+<li>*目的*接受中间代码，将其翻译为机器语言或汇编语言形式的目标程序</li>
+<li><b>要求</b> 生成代码尽可能短；充分发挥计算机可用资源的效率</li>
+</ul>
 <p>
-接受中间代码，将其翻译为机器语言或汇编语言形式的目标程序
-<b>要求</b> 生成代码尽可能短；充分发挥计算机可用资源的效率
 <b>目标代码的三种形式</b>
 </p>
 <ul class="org-ul">
@@ -449,13 +474,14 @@
 <li>多次扫描加工，有利于优化</li>
 <li>按模块逐次调入内存，有利于复盖技术的采用</li>
 </ul>
+<hr>
 </div>
 </div>
 </div>
-
 <div id="outline-container-orga108a31" class="outline-2">
 <h2 id="orga108a31">文法和语言</h2>
 <div class="outline-text-2" id="text-orga108a31">
+<hr>
 <p>
 <b>三种定义语言的方法</b>
 </p>
@@ -546,21 +572,21 @@ G[S]=(V<sub>N</sub> ,V<sub>T</sub> ,P,S)
 <div id="outline-container-orge3c2ec5" class="outline-3">
 <h3 id="orge3c2ec5">句型的分析</h3>
 <div class="outline-text-3" id="text-orge3c2ec5">
-<p>
-<b>左句型</b> 能由最左推导推导出的句型成为左句型，同理可得右句型
-<b>最右推导</b> 被称为 <b>规范推导</b>
-由规范推导推导出的句型称为规范句型
-</p>
+<ul class="org-ul">
+<li><b>左句型</b> 能由最左推导推导出的句型成为左句型，同理可得右句型</li>
+<li><b>最右推导</b> 被称为 <b>规范推导</b></li>
+<li>由规范推导推导出的句型称为 <b>规范句型</b></li>
+</ul>
 </div>
 <div id="outline-container-org77f1b2b" class="outline-4">
 <h4 id="org77f1b2b">语法树和二义性</h4>
 <div class="outline-text-4" id="text-org77f1b2b">
-<p>
-<b>语法树</b> 可以用来表示一个文法所描述语言的句型结构
-如果一个文法所描述语言的某个句子对应不止一棵语法树，则成该文法为 <b>二义性文法</b> 
-LL(1),LR(0)文法都是无二义性文法，若一个文法含有既是左递归又是右递归的非终结符，则该文法是二义性文法
-一个句型的最左直接短语称为此句型的句柄 
-</p>
+<ol class="org-ol">
+<li><b>语法树</b> 可以用来表示一个文法所描述语言的句型结构</li>
+<li>如果一个文法所描述语言的某个句子对应不止一棵语法树，则成该文法为 <b>二义性文法</b></li>
+<li>LL(1),LR(0)文法都是无二义性文法，若一个文法含有既是左递归又是右递归的非终结符，则该文法是二义性文法</li>
+<li>一个句型的最左直接短语称为此句型的句柄</li>
+</ol>
 </div>
 </div>
 </div>
@@ -599,7 +625,7 @@ LL(1),LR(0)文法都是无二义性文法，若一个文法含有既是左递归
 <h4 id="orgc3d5b05">2型文法或前后文无关文法CFG(2型语言)</h4>
 <div class="outline-text-4" id="text-orgc3d5b05">
 <p>
-A-&gt;B,A属于V<sub>N</sub> B属于V^+ 
+A-&gt;B,A属于V<sub>N</sub> B属于V<sup>(+)</sup>   
 </p>
 </div>
 </div>
@@ -622,6 +648,12 @@ A-&gt;B,A属于V<sub>N</sub> B属于V^+
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/exam/" rel="tag"># exam</a>
+          
+        </div>
       
 
       
