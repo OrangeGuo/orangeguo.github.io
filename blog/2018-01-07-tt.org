@@ -83,11 +83,9 @@ G[S]=(V_N ,V_T ,P,S)
 ** 文法和语言的乔姆斯基分类
 *** 0型文法或短语结构文法PSG(0型语言)
 对产生式不加任何限制
+\( \alpha \to \beta,\alpha \in V^+ ,\beta \in V^* \)
 *** 1型文法或前后文有关文法CSG(1型语言)
 所有产生式
-#+BEGIN_EXPORT latex
-\( \alpha \to \beta,|\alpha|\le|\beta| \)
-#+END_EXPORT
 \( \alpha \to \beta,|\alpha|\le|\beta| \)
 *** 2型文法或前后文无关文法CFG(2型语言)
 \( A \to \beta,A \in V_N ,\beta \in V^+ \)  
