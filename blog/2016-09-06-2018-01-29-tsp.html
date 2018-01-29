@@ -340,6 +340,81 @@
         
 <div id="outline-container-org7e8545e" class="outline-2">
 <h2 id="org7e8545e">什么是 <i>TSP问题</i> ?</h2>
+<div class="outline-text-2" id="text-org7e8545e">
+</div>
+<div id="outline-container-org3f716f3" class="outline-3">
+<h3 id="org3f716f3">定义</h3>
+<div class="outline-text-3" id="text-org3f716f3">
+<p>
+  TSP问题（Traveling Salesman Problem）即旅行商问题又译为旅行推销员问题、货郎担问题，是数学领域中著名问题之一。
+假设有一个旅行商人要拜访n个城市，他必须选择所要走的路径，路径的限制是每个城市只能拜访一次，而且最后要回到原来出
+发的城市。路径的选择目标是要求得的路径路程为所有路径之中的最小值。
+</p>
+</div>
+</div>
+<div id="outline-container-org99574e9" class="outline-3">
+<h3 id="org99574e9">特点</h3>
+<div class="outline-text-3" id="text-org99574e9">
+<p>
+  TSP问题是一个组合优化问题，是 <b>图论</b> 中最著名的问题之一（即“已给一个N个点的完全图，每条边有一个长度，求总长度最短
+的经过每个顶点正好一次的封闭回路”），且具有 <b>NPC计算复杂性</b> 。
+</p>
+</div>
+</div>
+<div id="outline-container-org6c72c0c" class="outline-3">
+<h3 id="org6c72c0c">限制</h3>
+<div class="outline-text-3" id="text-org6c72c0c">
+<p>
+这里考虑的TSP问题中任意两个城市都存在路径且来回距离是相等的，用图论的知识对TSP建模，则城市是图的顶点，路径是图的
+边，那么这里的TSP问题可以等价为用对一个 <b>无向加权完全图</b> 求封闭回路。
+</p>
+<hr>
+</div>
+</div>
+</div>
+<div id="outline-container-orgf8b316f" class="outline-2">
+<h2 id="orgf8b316f">求解算法</h2>
+<div class="outline-text-2" id="text-orgf8b316f">
+<p>
+求解TSP问题的算法有很多，如贪心算法，遗传算法，蚁群算法，模拟褪火算法，粒子群算法等等。这里选取前三种算法来求解。
+</p>
+<ul class="org-ul">
+<li><b>贪心算法</b> 顾名思义，贪心算法求解过程中每次只考虑当前情况下的最优结果，算法简单容易实现，求解速度快。但求得结果往往不是全局最优解。</li>
+<li><b>遗传算法</b> 遗传算法是一种具有全局搜索能力的智能算法，对求解TSP问题效果相当不错。</li>
+<li><b>蚁群算法</b> 蚁群算法是根据自然界中蚂蚁发现路径的行为而发明的用于寻求优化路径的机率型算法。</li>
+</ul>
+<hr>
+</div>
+</div>
+<div id="outline-container-org5007ce3" class="outline-2">
+<h2 id="org5007ce3">算法实现及效果评估</h2>
+<div class="outline-text-2" id="text-org5007ce3">
+</div>
+<div id="outline-container-org063c0b6" class="outline-4">
+<h4 id="org063c0b6">准备工作</h4>
+<div class="outline-text-4" id="text-org063c0b6">
+<p>
+假设输入为N个城市及城市的坐标。对所有城市进行编号，依次为N<sub>1</sub> ,N<sub>2</sub> &#x2026;N<sub>n</sub> 以描述得到解的路径，然后根据各点坐标求解任意两点间距离并用
+一张表（可以是一个二维数组）存储起来为后面求解作准备。
+</p>
+</div>
+</div>
+<div id="outline-container-org3831a6f" class="outline-4">
+<h4 id="org3831a6f">贪心算法</h4>
+<div class="outline-text-4" id="text-org3831a6f">
+</div>
+<ul class="org-ul">
+<li><a id="org636e405"></a>具体步骤<br>
+<div class="outline-text-5" id="text-org636e405">
+<ol class="org-ol">
+<li>选取任意点N<sub>i</sub> 作为起点（1&le; i &le; n），并将该点加入路径（开始路径为空）；</li>
+<li>从所有不在路径中的点中选取离最新加入路径的点最近的点加入路径；</li>
+<li>重复步骤2直至所有点均加入路径，此时按照各点加入路径的顺序连接各点并连接起点和终点形成的回路便是求得解。</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
 </div>
 
       
@@ -358,9 +433,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/java/" rel="tag"><i class="fa fa-tag"></i> java</a>
-          
             <a href="/tags/tutorial/" rel="tag"><i class="fa fa-tag"></i> tutorial</a>
+          
+            <a href="/tags/java/" rel="tag"><i class="fa fa-tag"></i> java</a>
           
         </div>
       
@@ -515,7 +590,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#org7e8545e"><span class="nav-text">什么是 TSP问题 ?</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#org7e8545e"><span class="nav-text">什么是 TSP问题 ?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org3f716f3"><span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org99574e9"><span class="nav-text">特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org6c72c0c"><span class="nav-text">限制</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#orgf8b316f"><span class="nav-text">求解算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#org5007ce3"><span class="nav-text">算法实现及效果评估</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#org063c0b6"><span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org3831a6f"><span class="nav-text">贪心算法</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
