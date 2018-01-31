@@ -64,7 +64,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="vscode," />
 
 
 
@@ -75,17 +75,18 @@
 
 
 
-<meta name="description" content="the guy was hungry layz">
-<meta property="og:type" content="website">
-<meta property="og:title" content="orange">
-<meta property="og:url" content="https://orangeguo.github.io/categories/index.html">
+<meta name="description" content="vscode 尝鲜 入手vscode的原因本人最近几个月沉迷于emacs不能自拔，被emacs中的org-mode强大功能所震撼，当然emacs作为编辑器的高效率等优点也就不一一提了。事情是这样的前两天我在逛某刻时，看“你日常使用哪些编辑器？”的话题讨论，然后本人带着些许的窃喜点开了评论区，果不其然，当时大约六十多条评论中只有两条提到了emacs，而大部分都提到了类似sublime，atom等当下">
+<meta name="keywords" content="vscode">
+<meta property="og:type" content="article">
+<meta property="og:title" content="visual studio code 开箱">
+<meta property="og:url" content="https://orangeguo.github.io/blog/2018-01-11-vscode.html">
 <meta property="og:site_name" content="orange">
-<meta property="og:description" content="the guy was hungry layz">
+<meta property="og:description" content="vscode 尝鲜 入手vscode的原因本人最近几个月沉迷于emacs不能自拔，被emacs中的org-mode强大功能所震撼，当然emacs作为编辑器的高效率等优点也就不一一提了。事情是这样的前两天我在逛某刻时，看“你日常使用哪些编辑器？”的话题讨论，然后本人带着些许的窃喜点开了评论区，果不其然，当时大约六十多条评论中只有两条提到了emacs，而大部分都提到了类似sublime，atom等当下">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-04T10:42:29.083Z">
+<meta property="og:updated_time" content="2018-01-24T12:15:28.436Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="orange">
-<meta name="twitter:description" content="the guy was hungry layz">
+<meta name="twitter:title" content="visual studio code 开箱">
+<meta name="twitter:description" content="vscode 尝鲜 入手vscode的原因本人最近几个月沉迷于emacs不能自拔，被emacs中的org-mode强大功能所震撼，当然emacs作为编辑器的高效率等优点也就不一一提了。事情是这样的前两天我在逛某刻时，看“你日常使用哪些编辑器？”的话题讨论，然后本人带着些许的窃喜点开了评论区，果不其然，当时大约六十多条评论中只有两条提到了emacs，而大部分都提到了类似sublime，atom等当下">
 
 
 
@@ -117,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="https://orangeguo.github.io/categories/"/>
+  <link rel="canonical" href="https://orangeguo.github.io/blog/2018-01-11-vscode.html"/>
 
 
 
@@ -386,34 +387,43 @@
 <hr>
 </div>
 </div>
-<div id="outline-container-org5007ce3" class="outline-2">
-<h2 id="org5007ce3">算法实现及效果评估</h2>
-<div class="outline-text-2" id="text-org5007ce3">
+<div id="outline-container-org289a8df" class="outline-2">
+<h2 id="org289a8df">算法步骤及效果评估</h2>
+<div class="outline-text-2" id="text-org289a8df">
 </div>
-<div id="outline-container-org063c0b6" class="outline-4">
-<h4 id="org063c0b6">准备工作</h4>
-<div class="outline-text-4" id="text-org063c0b6">
+<div id="outline-container-org063c0b6" class="outline-3">
+<h3 id="org063c0b6">准备工作</h3>
+<div class="outline-text-3" id="text-org063c0b6">
 <p>
 假设输入为N个城市及城市的坐标。对所有城市进行编号，依次为N<sub>1</sub> ,N<sub>2</sub> &#x2026;N<sub>n</sub> 以描述得到解的路径，然后根据各点坐标求解任意两点间距离并用
 一张表（可以是一个二维数组）存储起来为后面求解作准备。
 </p>
 </div>
 </div>
-<div id="outline-container-org3831a6f" class="outline-4">
-<h4 id="org3831a6f">贪心算法</h4>
-<div class="outline-text-4" id="text-org3831a6f">
+<div id="outline-container-org3831a6f" class="outline-3">
+<h3 id="org3831a6f">贪心算法</h3>
+<div class="outline-text-3" id="text-org3831a6f">
 </div>
-<ul class="org-ul">
-<li><a id="org636e405"></a>具体步骤<br>
-<div class="outline-text-5" id="text-org636e405">
+<div id="outline-container-org636e405" class="outline-4">
+<h4 id="org636e405">具体步骤</h4>
+<div class="outline-text-4" id="text-org636e405">
 <ol class="org-ol">
 <li>选取任意点N<sub>i</sub> 作为起点（1&le; i &le; n），并将该点加入路径（开始路径为空）；</li>
 <li>从所有不在路径中的点中选取离最新加入路径的点最近的点加入路径；</li>
 <li>重复步骤2直至所有点均加入路径，此时按照各点加入路径的顺序连接各点并连接起点和终点形成的回路便是求得解。</li>
 </ol>
+<img src="/images/tsp01.png" alt="Drawing" width="400px">
 </div>
-</li>
-</ul>
+</div>
+<div id="outline-container-org02b9cc8" class="outline-4">
+<h4 id="org02b9cc8">结果评估</h4>
+<div class="outline-text-4" id="text-org02b9cc8">
+<p>
+由于贪心算法比较简单这里就不再给出代码，输入为标准51个城市数据。一般随机选取起点，然后按算法步骤求得解即
+为最终结果。这里分别把每个城市作为起点进行计算，取其中最优解做为最终结果，更为合理。
+</p>
+</div>
+</div>
 </div>
 </div>
 
@@ -433,9 +443,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/tutorial/" rel="tag"><i class="fa fa-tag"></i> tutorial</a>
-          
             <a href="/tags/java/" rel="tag"><i class="fa fa-tag"></i> java</a>
+          
+            <a href="/tags/tutorial/" rel="tag"><i class="fa fa-tag"></i> tutorial</a>
           
         </div>
       
@@ -590,7 +600,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#org7e8545e"><span class="nav-text">什么是 TSP问题 ?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org3f716f3"><span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org99574e9"><span class="nav-text">特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org6c72c0c"><span class="nav-text">限制</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#orgf8b316f"><span class="nav-text">求解算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#org5007ce3"><span class="nav-text">算法实现及效果评估</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#org063c0b6"><span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org3831a6f"><span class="nav-text">贪心算法</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#org7e8545e"><span class="nav-text">什么是 TSP问题 ?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org3f716f3"><span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org99574e9"><span class="nav-text">特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org6c72c0c"><span class="nav-text">限制</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#orgf8b316f"><span class="nav-text">求解算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#org289a8df"><span class="nav-text">算法步骤及效果评估</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org063c0b6"><span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org3831a6f"><span class="nav-text">贪心算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#org636e405"><span class="nav-text">具体步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org02b9cc8"><span class="nav-text">结果评估</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
