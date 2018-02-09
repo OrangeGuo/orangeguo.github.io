@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -64,7 +64,7 @@
 
 
 
-  <meta name="keywords" content="vscode," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -75,18 +75,17 @@
 
 
 
-<meta name="description" content="vscode 尝鲜 入手vscode的原因本人最近几个月沉迷于emacs不能自拔，被emacs中的org-mode强大功能所震撼，当然emacs作为编辑器的高效率等优点也就不一一提了。事情是这样的前两天我在逛某刻时，看“你日常使用哪些编辑器？”的话题讨论，然后本人带着些许的窃喜点开了评论区，果不其然，当时大约六十多条评论中只有两条提到了emacs，而大部分都提到了类似sublime，atom等当下">
-<meta name="keywords" content="vscode">
-<meta property="og:type" content="article">
-<meta property="og:title" content="visual studio code 开箱">
-<meta property="og:url" content="https://orangeguo.github.io/blog/2018-01-11-vscode.html">
+<meta name="description" content="the guy was hungry layz">
+<meta property="og:type" content="website">
+<meta property="og:title" content="orange">
+<meta property="og:url" content="https://orangeguo.github.io/tags/index.html">
 <meta property="og:site_name" content="orange">
-<meta property="og:description" content="vscode 尝鲜 入手vscode的原因本人最近几个月沉迷于emacs不能自拔，被emacs中的org-mode强大功能所震撼，当然emacs作为编辑器的高效率等优点也就不一一提了。事情是这样的前两天我在逛某刻时，看“你日常使用哪些编辑器？”的话题讨论，然后本人带着些许的窃喜点开了评论区，果不其然，当时大约六十多条评论中只有两条提到了emacs，而大部分都提到了类似sublime，atom等当下">
+<meta property="og:description" content="the guy was hungry layz">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-24T12:15:28.436Z">
+<meta property="og:updated_time" content="2018-01-04T10:41:22.598Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="visual studio code 开箱">
-<meta name="twitter:description" content="vscode 尝鲜 入手vscode的原因本人最近几个月沉迷于emacs不能自拔，被emacs中的org-mode强大功能所震撼，当然emacs作为编辑器的高效率等优点也就不一一提了。事情是这样的前两天我在逛某刻时，看“你日常使用哪些编辑器？”的话题讨论，然后本人带着些许的窃喜点开了评论区，果不其然，当时大约六十多条评论中只有两条提到了emacs，而大部分都提到了类似sublime，atom等当下">
+<meta name="twitter:title" content="orange">
+<meta name="twitter:description" content="the guy was hungry layz">
 
 
 
@@ -94,7 +93,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Gemini',
     version: '6.0.0',
     sidebar: {"position":"right","display":"always","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: false,
@@ -118,7 +117,7 @@
 
 
 
-  <link rel="canonical" href="https://orangeguo.github.io/blog/2018-01-11-vscode.html"/>
+  <link rel="canonical" href="https://orangeguo.github.io/tags/"/>
 
 
 
@@ -404,9 +403,9 @@
 <h3 id="org3831a6f">贪心算法</h3>
 <div class="outline-text-3" id="text-org3831a6f">
 </div>
-<div id="outline-container-org636e405" class="outline-4">
-<h4 id="org636e405">具体步骤</h4>
-<div class="outline-text-4" id="text-org636e405">
+<div id="outline-container-org2f1d0fb" class="outline-4">
+<h4 id="org2f1d0fb">具体步骤</h4>
+<div class="outline-text-4" id="text-org2f1d0fb">
 <ol class="org-ol">
 <li>选取任意点N<sub>i</sub> 作为起点（1&le; i &le; n），并将该点加入路径（开始路径为空）；</li>
 <li>从所有不在路径中的点中选取离最新加入路径的点最近的点加入路径；</li>
@@ -419,8 +418,62 @@
 <h4 id="org02b9cc8">结果评估</h4>
 <div class="outline-text-4" id="text-org02b9cc8">
 <p>
-由于贪心算法比较简单这里就不再给出代码，输入为标准51个城市数据。一般随机选取起点，然后按算法步骤求得解即
+输入为标准51个城市数据。一般随机选取起点，然后按算法步骤求得解即
 为最终结果。这里分别把每个城市作为起点进行计算，取其中最优解做为最终结果，更为合理。
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgfec0f6e" class="outline-3">
+<h3 id="orgfec0f6e">遗传算法</h3>
+<div class="outline-text-3" id="text-orgfec0f6e">
+</div>
+<div id="outline-container-orge2675a9" class="outline-4">
+<h4 id="orge2675a9">具体步骤</h4>
+<div class="outline-text-4" id="text-orge2675a9">
+<ol class="org-ol">
+<li>设置种群个体数，最优个体复制率，变异率，迭代次数；</li>
+<li>初始化种群（这里将每次随机生成的路径看作种群个体）；</li>
+<li>计算个体适应度（按照每条路径计算回路长度，长度越短适应度越高，可设置适应度为长度倒数）；</li>
+<li>根据适应度找到最优个体并根据复制率复制该个体，然后按适应度排序移除排名靠后个体；</li>
+<li>按照变异率随机选取个体变异；</li>
+<li>重复3-5步骤若干次数（迭代次数）。</li>
+</ol>
+<img src="/images/tsp02.png" alt="Drawing" width="400px">
+</div>
+</div>
+<div id="outline-container-org32a3642" class="outline-4">
+<h4 id="org32a3642">结果评估</h4>
+<div class="outline-text-4" id="text-org32a3642">
+<p>
+输入数据同上。按上述步骤求解。这里设置种群个体数为100, 变异率为0.1, 最优个体复制率为0.1, 迭代次数为200次。
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org00fc7b2" class="outline-3">
+<h3 id="org00fc7b2">蚁群算法</h3>
+<div class="outline-text-3" id="text-org00fc7b2">
+</div>
+<div id="outline-container-orga0d2a43" class="outline-4">
+<h4 id="orga0d2a43">具体步骤</h4>
+<div class="outline-text-4" id="text-orga0d2a43">
+<ol class="org-ol">
+<li>设置迭代次数（每只蚂蚁跑完一圈视为一次迭代），蚂蚁数量（这里在每个城市放置一只蚂蚁即蚂蚁数等于城市数），信息素挥发率；</li>
+<li>分别在每个城市放置一个蚂蚁，并标记（已访问过的蚂蚁不能再次访问该城市），初始化每个城市的信息素浓度（按照距离越短信息素浓度越高的原则）；</li>
+<li>根据信息素浓度为每只蚂蚁选择下一个访问城市，并对每个城市根据当前蚂蚁数量更新信息素浓度；</li>
+<li>重复步骤3至所有城市均访问过；</li>
+<li>挥发信息素</li>
+<li>重复步骤3-5若干次（迭代次数）。</li>
+</ol>
+<img src="/images/tsp03.png" alt="Drawing" width="400px">
+</div>
+</div>
+<div id="outline-container-org50e3357" class="outline-4">
+<h4 id="org50e3357">结果评估</h4>
+<div class="outline-text-4" id="text-org50e3357">
+<p>
+输入数据同上。按上述步骤求解。这里设置蚂蚁数量等于城市数量，迭代次数为200次。
 </p>
 </div>
 </div>
@@ -443,9 +496,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/java/" rel="tag"><i class="fa fa-tag"></i> java</a>
-          
             <a href="/tags/tutorial/" rel="tag"><i class="fa fa-tag"></i> tutorial</a>
+          
+            <a href="/tags/java/" rel="tag"><i class="fa fa-tag"></i> java</a>
           
         </div>
       
@@ -464,8 +517,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/blog/2017-07-11-2018-01-26-java-extra.html" rel="prev" title="java补充笔记">
-                java补充笔记 <i class="fa fa-chevron-right"></i>
+              <a href="/blog/2017-07-11-2018-01-19-java-notes.html" rel="prev" title="java notes">
+                java notes <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -600,7 +653,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#org7e8545e"><span class="nav-text">什么是 TSP问题 ?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org3f716f3"><span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org99574e9"><span class="nav-text">特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org6c72c0c"><span class="nav-text">限制</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#orgf8b316f"><span class="nav-text">求解算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#org289a8df"><span class="nav-text">算法步骤及效果评估</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org063c0b6"><span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org3831a6f"><span class="nav-text">贪心算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#org636e405"><span class="nav-text">具体步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org02b9cc8"><span class="nav-text">结果评估</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#org7e8545e"><span class="nav-text">什么是 TSP问题 ?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org3f716f3"><span class="nav-text">定义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org99574e9"><span class="nav-text">特点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org6c72c0c"><span class="nav-text">限制</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#orgf8b316f"><span class="nav-text">求解算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#org289a8df"><span class="nav-text">算法步骤及效果评估</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org063c0b6"><span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org3831a6f"><span class="nav-text">贪心算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#org2f1d0fb"><span class="nav-text">具体步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org02b9cc8"><span class="nav-text">结果评估</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orgfec0f6e"><span class="nav-text">遗传算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#orge2675a9"><span class="nav-text">具体步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org32a3642"><span class="nav-text">结果评估</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org00fc7b2"><span class="nav-text">蚁群算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#orga0d2a43"><span class="nav-text">具体步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#org50e3357"><span class="nav-text">结果评估</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -728,6 +781,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.0.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.0.0"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.0"></script>
