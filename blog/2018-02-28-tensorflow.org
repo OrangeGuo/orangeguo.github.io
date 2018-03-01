@@ -1,4 +1,4 @@
-#+TITLE: tensorflow
+#+TITLE: tensorflow 基础
 #+DATE: 2018-02-28
 #+SETUPFILE: ~/blog/setupfile.org
 #+JEKYLL_LAYOUT: post
