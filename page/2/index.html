@@ -64,7 +64,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="学习笔记," />
 
 
 
@@ -75,17 +75,18 @@
 
 
 
-<meta name="description" content="人生有梦，各自精彩">
-<meta property="og:type" content="website">
-<meta property="og:title" content="orange">
-<meta property="og:url" content="https://orangeguo.github.io/tags/index.html">
+<meta name="description" content="1 绪论    1.1 数据库的四个基本概念   数据，数据库中存储的基本对象 数据库：长期存储在计算机内、有组织的、可共享的大量数据的集合。数据库数据具有 永 久存储、有组织和可共享三个基本特点 数据库管理系统 数据库系统：由数据库、数据库管理系统（及其应用开发工具）、应用程序和数据库管理员 组成的存储、管理、处理和维护数据的系统     1.2 数据管理三个阶段   人工管理阶段 文件系统">
+<meta name="keywords" content="学习笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数据库系统">
+<meta property="og:url" content="https://orangeguo.github.io/blog/2018-04-02-2018-04-02-database.html">
 <meta property="og:site_name" content="orange">
-<meta property="og:description" content="人生有梦，各自精彩">
+<meta property="og:description" content="1 绪论    1.1 数据库的四个基本概念   数据，数据库中存储的基本对象 数据库：长期存储在计算机内、有组织的、可共享的大量数据的集合。数据库数据具有 永 久存储、有组织和可共享三个基本特点 数据库管理系统 数据库系统：由数据库、数据库管理系统（及其应用开发工具）、应用程序和数据库管理员 组成的存储、管理、处理和维护数据的系统     1.2 数据管理三个阶段   人工管理阶段 文件系统">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-04T10:41:22.598Z">
+<meta property="og:updated_time" content="2018-04-07T12:42:30.412Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="orange">
-<meta name="twitter:description" content="人生有梦，各自精彩">
+<meta name="twitter:title" content="数据库系统">
+<meta name="twitter:description" content="1 绪论    1.1 数据库的四个基本概念   数据，数据库中存储的基本对象 数据库：长期存储在计算机内、有组织的、可共享的大量数据的集合。数据库数据具有 永 久存储、有组织和可共享三个基本特点 数据库管理系统 数据库系统：由数据库、数据库管理系统（及其应用开发工具）、应用程序和数据库管理员 组成的存储、管理、处理和维护数据的系统     1.2 数据管理三个阶段   人工管理阶段 文件系统">
 
 
 
@@ -117,7 +118,7 @@
 
 
 
-  <link rel="canonical" href="https://orangeguo.github.io/tags/"/>
+  <link rel="canonical" href="https://orangeguo.github.io/blog/2018-04-02-2018-04-02-database.html"/>
 
 
 
@@ -778,6 +779,168 @@ java 是静态语言，要求严格的继承体系。如动态中向上转型传
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://orangeguo.github.io/blog/2017-07-11-2018-01-19-java-notes.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="OrangeGuo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="orange">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/blog/2017-07-11-2018-01-19-java-notes.html" itemprop="url">java notes</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-11T00:00:00+08:00">2017-07-11</time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/notes/" itemprop="url" rel="index">
+                    <span itemprop="name">notes</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          
+
+java notes
+
+
+
+java类集框架中map的输出
+
+
+map 不能直接使用iterator输出，因为 map 接口没有提供类似于 collection 接口的iterator 方法。
+
+
+
+使用iterator输出map 的步骤
+
+
+使用map 接口的entrySet 方法将map 集
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/blog/2017-07-11-2018-01-19-java-notes.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://orangeguo.github.io/blog/2017-07-11-2018-01-26-java-extra.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -907,168 +1070,6 @@ java 是静态语言，要求严格的继承体系。如动态中向上转型传
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/blog/2017-07-11-2018-01-26-java-extra.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://orangeguo.github.io/blog/2017-07-11-2018-01-19-java-notes.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="OrangeGuo">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="orange">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog/2017-07-11-2018-01-19-java-notes.html" itemprop="url">java notes</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-11T00:00:00+08:00">2017-07-11</time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/notes/" itemprop="url" rel="index">
-                    <span itemprop="name">notes</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-
-java notes
-
-
-
-java类集框架中map的输出
-
-
-map 不能直接使用iterator输出，因为 map 接口没有提供类似于 collection 接口的iterator 方法。
-
-
-
-使用iterator输出map 的步骤
-
-
-使用map 接口的entrySet 方法将map 集
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/blog/2017-07-11-2018-01-19-java-notes.html#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
