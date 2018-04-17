@@ -64,7 +64,7 @@
 
 
 
-  <meta name="keywords" content="java," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -75,18 +75,17 @@
 
 
 
-<meta name="description" content="1 JavaEE 三层结构   web层 视图层 struct2框架 service层 业务逻辑层 spring框架 dao层 hibernate框架 对数据库进行crud操作（增删改查）    1.1 MVC分层思想    2 hibernate框架   对jdbc进行封装 开源轻量级框架 应用在javaEE的dao层    2.1 ORM思想   即对象关系映射   让实体类（javabe">
-<meta name="keywords" content="java">
-<meta property="og:type" content="article">
-<meta property="og:title" content="java-web">
-<meta property="og:url" content="https://orangeguo.github.io/blog/2018-04-11-2018-04-11-java-web.html">
+<meta name="description" content="人生有梦，各自精彩">
+<meta property="og:type" content="website">
+<meta property="og:title" content="orange">
+<meta property="og:url" content="https://orangeguo.github.io/categories/index.html">
 <meta property="og:site_name" content="orange">
-<meta property="og:description" content="1 JavaEE 三层结构   web层 视图层 struct2框架 service层 业务逻辑层 spring框架 dao层 hibernate框架 对数据库进行crud操作（增删改查）    1.1 MVC分层思想    2 hibernate框架   对jdbc进行封装 开源轻量级框架 应用在javaEE的dao层    2.1 ORM思想   即对象关系映射   让实体类（javabe">
+<meta property="og:description" content="人生有梦，各自精彩">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-16T07:27:13.094Z">
+<meta property="og:updated_time" content="2018-01-04T10:42:29.083Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="java-web">
-<meta name="twitter:description" content="1 JavaEE 三层结构   web层 视图层 struct2框架 service层 业务逻辑层 spring框架 dao层 hibernate框架 对数据库进行crud操作（增删改查）    1.1 MVC分层思想    2 hibernate框架   对jdbc进行封装 开源轻量级框架 应用在javaEE的dao层    2.1 ORM思想   即对象关系映射   让实体类（javabe">
+<meta name="twitter:title" content="orange">
+<meta name="twitter:description" content="人生有梦，各自精彩">
 
 
 
@@ -118,7 +117,7 @@
 
 
 
-  <link rel="canonical" href="https://orangeguo.github.io/blog/2018-04-11-2018-04-11-java-web.html"/>
+  <link rel="canonical" href="https://orangeguo.github.io/categories/"/>
 
 
 
@@ -483,6 +482,17 @@ ServletContext对象，使用监听器可以监听对象创建时间，然后就
 面向切面编程，实现拓展功能不修改源代码。采用 <b>横向抽取机制</b> ，取代传统纵向继承体系重复性代码。
 </p>
 </div>
+<div id="outline-container-org07db3b4" class="outline-4">
+<h4 id="org07db3b4"><span class="section-number-4">3.7.1</span> 操作术语</h4>
+<div class="outline-text-4" id="text-3-7-1">
+<ul class="org-ul">
+<li><b>连接点</b> 类里面可以被增强的方法</li>
+<li><b>切入点</b> 类里面实际被增强的方法</li>
+<li><b>通知/增强</b> 增强的逻辑或功能</li>
+<li><b>切面</b> 把增强应用到具体方法的过程</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 
@@ -657,7 +667,7 @@ ServletContext对象，使用监听器可以监听对象创建时间，然后就
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#orgf321db9"><span class="nav-text">1 JavaEE 三层结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org169513c"><span class="nav-text">1.1 MVC分层思想</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#orgcb0a948"><span class="nav-text">2 hibernate框架</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org3369524"><span class="nav-text">2.1 ORM思想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org1f643b7"><span class="nav-text">2.2 搭建hibernate环境</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#org52ebd43"><span class="nav-text">3 spring框架</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org590fbca"><span class="nav-text">3.1 核心部分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#org53e529e"><span class="nav-text">3.1.1 IOC 控制反转</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#orgb00f42f"><span class="nav-text">3.1.2 AOP 面向切面编程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org8fd17cb"><span class="nav-text">3.2 一站式框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orgd0f378e"><span class="nav-text">3.3 bean 实例化三种方式实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orgecffdce"><span class="nav-text">3.4 属性输入的三种方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org73d2f45"><span class="nav-text">3.5 IOC和DI</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org534984d"><span class="nav-text">3.6 spring整合web项目原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org91cf546"><span class="nav-text">3.7 AOP</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#orgf321db9"><span class="nav-text">1 JavaEE 三层结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org169513c"><span class="nav-text">1.1 MVC分层思想</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#orgcb0a948"><span class="nav-text">2 hibernate框架</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org3369524"><span class="nav-text">2.1 ORM思想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org1f643b7"><span class="nav-text">2.2 搭建hibernate环境</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#org52ebd43"><span class="nav-text">3 spring框架</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#org590fbca"><span class="nav-text">3.1 核心部分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#org53e529e"><span class="nav-text">3.1.1 IOC 控制反转</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#orgb00f42f"><span class="nav-text">3.1.2 AOP 面向切面编程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org8fd17cb"><span class="nav-text">3.2 一站式框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orgd0f378e"><span class="nav-text">3.3 bean 实例化三种方式实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#orgecffdce"><span class="nav-text">3.4 属性输入的三种方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org73d2f45"><span class="nav-text">3.5 IOC和DI</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org534984d"><span class="nav-text">3.6 spring整合web项目原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#org91cf546"><span class="nav-text">3.7 AOP</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#org07db3b4"><span class="nav-text">3.7.1 操作术语</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
